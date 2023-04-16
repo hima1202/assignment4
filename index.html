@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+            background-color: black;
+            padding: 150px 600px;
+        }
+    .container {
+    padding: 1%;
+    background-color: rgba(39, 37, 37, 0.942);
+    border-radius: 10px;
+    display: flex;fon
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height:450px;
+    text-align: start;
+    }
+    .text-field {
+        position: relative;
+        margin: 10px 2.5px 20px 2.5px;
+    }
+  input ,button{
+        display: inline-block;
+        border: thin solid #fafafa;
+        border-bottom: solid medium #999;
+        color: #444;
+        background-color: #3d3e49;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        margin: 8px 7px;
+        width:250px
+    }
+    h1,p{
+      margin: 8px 20px;
+      color: white;
+    }
+
+    
+   label {
+        color: #999;
+        position: absolute;
+        pointer-events: none;
+        left: 10px;
+        top: 10px;
+        transition: 0.2s;
+    }
+
+    input:focus ~ label, input:valid ~ label {
+        top: -10px;
+        left: 15px;
+        font-size: medium;
+        color: #f51212;
+        background-color :#2f3350;
+        padding:0 5px 0 5px;
+        border-radius: 5px;
+        border-radius: 10px;
+    }
+    .submit {
+      background-color:#06D;
+      color: white;
+      padding: 12px 15px;
+      margin: 8px 7px;
+      border: none;
+      cursor: pointer;
+      width: 283px;
+      opacity: 0.9;
+      border-radius: 10px;
+    }
+        
+    }
+    
+    input{
+        width:260px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Welcome</h1>
+    <p>Let's create your account!</p>
+    <div class="text-field">
+        <input type="text" required>
+        <label>First name</label>
+    </div>
+
+    <div class="text-field">
+        <input type="text" required>
+        <label>Last name</label>
+    </div>
+    <div class="text-field">
+        <input type="text" required>
+        <label>Email</label>
+    </div>
+    <button type="submit" class="submit">Submit</button>
+
+
+</div>
+
+    
+    
+</body>
+</html>
